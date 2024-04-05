@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    width: 100%;
+    height: max-content;
+    border-radius: 7.5px;
+    border: 1px solid grey;
+    overflow: hidden;
+}
+
+.wrapper .division {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.wrapper .division .group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper .division .group img {
+    width: 60px;
+}
+
+.wrapper .division .group h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+}
+
+.wrapper .division .group p {
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+}
+
+.wrapper .division .button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 70%;
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.wrapper #sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.wrapper #suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.wrapper #luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.wrapper #sedan .button {
+    color: hsl(31, 77%, 52%);
+}
+
+.wrapper #suvs .button {
+    color: hsl(184, 100%, 22%);
+}
+
+.wrapper #luxury .button {
+    color: hsl(179, 100%, 13%);
+}
+
+#sedan .button:hover,
+#suvs .button:hover,
+#luxury .button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (min-width: 376px) {
+
+    body,
+    html {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+    }
+
+    .wrapper {
+        width: 800px;
+        height: 450px;
+        border-radius: 7.5px;
+        border: 1px solid grey;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .wrapper .division {
+        height: 100%;
+        width: calc(100% / 3);
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        justify-content: space-between;
+    }
+}
